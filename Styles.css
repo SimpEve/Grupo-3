@@ -9,7 +9,7 @@
 
 body{
     height: 100vh;
-    display: flex;
+    display: block;
     font-family: sans-serif;
     text-transform: capitalize;
     position: relative;
@@ -20,10 +20,10 @@ body{
     margin: 0 auto;
 }
 
-.footer{
+footer{
     background-color: #24262B;
     padding: auto 0;
-    position: fixed;
+    position: flex;
     bottom: 0;
     width: 100%;
 }
@@ -126,7 +126,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(to left,#EBB42C, #1B3E2F 90%);
+    background: linear-gradient(90deg, #1A3A2C 0%, #239B36 51%, #EBB42C 100%);
 }
 
 .Contacto{
@@ -178,6 +178,8 @@ form .Detalles-Contacto .input-box{
     border: 1px solid #ccc;
     padding-left: 15px;
     font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s;
 }
 
 form .Detalles-Contacto .textarea-box{
@@ -205,6 +207,8 @@ form .Detalles-Contacto .textarea-box{
     font-family: sans-serif;
     font-size: 16px;
     padding-top: 10px;
+    border-bottom-width: 2px;
+    transition: all 0.3s;
 }
 
 form .button{
@@ -226,4 +230,8 @@ form .button input{
 }
 form .button input:hover{
     background: linear-gradient(-135deg,#1B3E2F,#EBB42C);
+}
+
+.Detalles-Contacto .input-box input:focus{
+    border-color: #1B3E2F;
 }
