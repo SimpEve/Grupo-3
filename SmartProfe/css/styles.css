@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    display: block;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    position: relative;
+    background: linear-gradient(to right, #1A3A2C, #5A993C, #EBB42C);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #24262B;
+    padding: auto 0;
+    position: flex;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-row{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4{
+    font-size: 20px;
+    color:#FFFFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #EBB42C;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #FFFFFF;
+    padding-left: 6px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
+}
+
+.social-link a:hover{
+    background-color: #EBB42C;
+}
+
+.Derechos{
+    border-top: 50px;
+    color:#a1a1a1;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media(max-width:584px) {
+    .footer{
+        display: block;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .Contacto{
+        max-width: 100%;
+    }
+
+    form .Detalles-Contacto .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .Contacto form .Detalles-Contacto{
+        max-height: 300px;
+    }
+
+}
+/*BLOQUE CONTACTANOS*/
+
+.Section-Contacto{
+    display: flex;
+    width: 100%;
+    height: calc(100% / 1.4 + 20px);
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(to right, #1A3A2C, #5A993C, #EBB42C);
+}
+
+.Contacto{
+    max-width: 700px;
+    width: 100%;
+    background: #fffFFF;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.Contacto .Titulo-C{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.Contacto .Titulo-C::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100px;
+    background: linear-gradient(to left,#EBB42C, #1B3E2F 90%);
+}
+
+.Contacto form .Detalles-Contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .Detalles-Contacto .input-box{
+    margin: 20px 0  12px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.Detalles-Contacto .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.Detalles-Contacto .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s;
+}
+
+form .Detalles-Contacto .textarea-box{
+    margin: 20px 0  12px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.Detalles-Contacto .textarea-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.Detalles-Contacto .textarea-box textarea{
+    width: 100%;
+    min-width: 640px;
+    max-width: 640px;
+    height: 100%;
+    min-height: 100px;
+    max-height: 100px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding-top: 10px;
+    border-bottom-width: 2px;
+    transition: all 0.3s;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#EBB42C, #1B3E2F);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg,#1B3E2F,#EBB42C);
+}
+
+.Detalles-Contacto .input-box input:focus{
+    border-color: #1B3E2F;
+}
+
+section.bannerN{
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1a3a2c, #5A993C,#EBB42C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1a3a2c , #5A993C,#EBB42C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 3rem 0;
+}
+/* fondo de nosotros */
+.containerB{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+    grid-gap: 2rem;
+}
+
+
+.imgBannerN{
+    width: 80%;
+}
+
+#txtBannerN{
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: justify;
+    color: #ffffff;
+}
+
+/*SECCION conoce al equipo*/
+
+
+/* Estilos para la sección "Conoce al equipo" */
+section.nosotros {
+    background: #f4f4f4; /* Fondo gris claro (puedes ajustar el color según tus preferencias) */
+    background: -webkit-linear-gradient(to right, #1a3a2c, #5A993C,#EBB42C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1a3a2c , #5A993C,#EBB42C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 3rem 0;
+    text-align: left; /* Centrar el contenido en la sección */
+}
+
+
+.team-image {
+    width: 380px; /* Ajusta el ancho a tu preferencia */
+    height: 380px; /* Ajusta la altura a tu preferencia */
+    object-fit: cover;
+    border-radius: 50%; /* Hace que las imágenes sean redondas */
+    border: 4px solid #050505; /* Agrega un borde de 2px sólido de color rojo (#840000) */
+}
+
+.containerS {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.subNosotos h2 {
+    font-size: 2rem;
+    color: #ffffff; /* Color de texto gris oscuro */
+    margin-bottom: 1rem;
+    text-align: left; /* Alinea el título a la izquierda */
+}
+
+.containern, .containern2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinea las imágenes hacia la izquierda */
+}
+
+.boxn1,
+.boxn2,
+.boxn3,
+.boxn4,
+.boxn5 {
+    flex: 1;
+    max-width: calc(33.33% - 10px); /* Ancho máximo para cada caja de miembro del equipo (3 por fila) */
+    margin: 5px;
+    text-align: center;
+}
+
+.boxn1 img,
+.boxn2 img,
+.boxn3 img,
+.boxn4 img,
+.boxn5 img {
+    max-width: 100%;
+    border-radius: 50%; /* Hace que las imágenes sean redondas (puedes ajustar según sea necesario) */
+}
+
+.boxn1 h3,
+.boxn2 h3,
+.boxn3 h3,
+.boxn4 h3,
+.boxn5 h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 0.5rem; /* Espaciado superior entre el nombre y la imagen */
+    text-align: center; /* Alinea el nombre del miembro del equipo al centro */
+}
